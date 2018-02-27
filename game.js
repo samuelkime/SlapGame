@@ -13,7 +13,7 @@ function ItemBuilder (name, modifier, description, img) {
 var items = {
     attPotion:new ItemBuilder("Attack Potion", 1.5, "A glass bottle with a strange green liquid.",),
     berPotion:new ItemBuilder("Berserker Potion", 2, "A glass bottle with a glowing yellow liquid.",),
-    helPotion:new ItemBuilder("Health Potion", 30, "A glass bottle with a familiar red liquid.",)
+    helPotion:new ItemBuilder("Juggernaut Potion", 3, "A glass bottle with a bubbling red liquid.",)
 }
 
 var fighter = {
@@ -70,9 +70,9 @@ function drawChamp (playerChoice) {
     <p>Champion Health: ${champ.playerHealth}</p>
     <div class="col">
         <div class="btn-group btn-group-vertical button-format">
-            <button type="button" class="btn btn-default btn-block" onclick="attack(5)">${champ.lightWep}</button>
-            <button type="button" class="btn btn-success btn-block" onclick="attack(10)">${champ.midWep}</button>
-            <button type="button" class="btn btn-danger btn-block" onclick="attack(20)">${champ.heavyWep}</button>
+            <button type="button" class="btn btn-default btn-block" onclick="attack(1)">${champ.lightWep}</button>
+            <button type="button" class="btn btn-success btn-block" onclick="attack(3)">${champ.midWep}</button>
+            <button type="button" class="btn btn-danger btn-block" onclick="attack(5)">${champ.heavyWep}</button>
         </div>
     </div>
     <div class="col">
@@ -90,7 +90,7 @@ function attack(damage) {
     enemyHealth -= damage*totalMod
     if (enemyHealth < 0) {
         enemyHealth = 0
-        
+
     }
     enemyPick.innerHTML = "Enemy Health: "+enemyHealth
 }

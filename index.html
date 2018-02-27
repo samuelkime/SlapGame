@@ -15,22 +15,26 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <h1>Adventure Slap!</h1>
+                <h1>Slap the Beholder!</h1>
                 <p>Choose your Champion to begin!</p>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <button onclick="drawChamp(0)" type="button" class="btn btn-danger btn-lg btn-block" data-toggle="popover" data-placement="bottom" title="A Fierce Warrior!" data-trigger="hover" data-content="Uses a Longsword, Spear, and Bare (well, metal covered) Fists to get the job done!">Fighter</button>
+                <button onclick="drawChamp(0)" type="button" class="btn btn-danger btn-lg btn-block" data-toggle="popover" data-placement="bottom"
+                    title="A Fierce Warrior!" data-trigger="hover" data-content="Uses a Longsword, Spear, and Bare (well, metal covered) Fists to get the job done!">Fighter</button>
             </div>
             <div class="col">
-                <button onclick="drawChamp(1)" type="button" class="btn btn-info btn-lg btn-block" data-toggle="popover" data-placement="bottom" title="A Mystic Dynamo!" data-trigger="hover" data-content="Makes use of Fireballs, Ice Spikes, and a Lightning Storm to destroy their foes!">Wizard</button>
+                <button onclick="drawChamp(1)" type="button" class="btn btn-info btn-lg btn-block" data-toggle="popover" data-placement="bottom"
+                    title="A Mystic Dynamo!" data-trigger="hover" data-content="Makes use of Fireballs, Ice Spikes, and a Lightning Storm to destroy their foes!">Wizard</button>
             </div>
             <div class="col">
-                <button onclick="drawChamp(2)" type="button" class="btn btn-success btn-lg btn-block" data-toggle="popover" data-placement="bottom" title="A Dextrous Striker!" data-trigger="hover" data-content="Using Throwing Knives, Poison Darts, or his trusty Longbow, opponents often never see their end before it meets them!">Ranger</button>
+                <button onclick="drawChamp(2)" type="button" class="btn btn-success btn-lg btn-block" data-toggle="popover" data-placement="bottom"
+                    title="A Dextrous Striker!" data-trigger="hover" data-content="Using Throwing Knives, Poison Darts, or his trusty Longbow, opponents often never see their end before it meets them!">Ranger</button>
             </div>
             <div class="col">
-                <button onclick="drawChamp(3)" type="button" class="btn btn-warning btn-lg btn-block" data-toggle="popover" data-placement="bottom" title="A Stealthy Assassin!" data-trigger="hover" data-content="Kunai, Grenades, Twin Katanas. Become the ultimate shadow warrior!">Ninja</button>
+                <button onclick="drawChamp(3)" type="button" class="btn btn-warning btn-lg btn-block" data-toggle="popover" data-placement="bottom"
+                    title="A Stealthy Assassin!" data-trigger="hover" data-content="Kunai, Grenades, Twin Katanas. Become the ultimate shadow warrior!">Ninja</button>
             </div>
         </div>
     </div>
@@ -44,28 +48,30 @@
                     <img id="champPic" src="" alt="">
                 </div>
                 <div id="playerButtons" class="row">
-                    
                 </div>
             </div>
             <div id="enemyChampion" class="col-lg-6">
-                    <div class="row">
-                            <h1></h1>
-                        </div>
-                        <div class="row">
-                            <img id="enemyPic" src="" alt="">
-                        </div>
-                        <div class="row">
-                            <p id="enemyHealth"></p>
-                        </div>
-                    </div>
+                <div class="row">
+                    <h1>Beholder!</h1>
+                </div>
+                <div class="row">
+                    <img id="enemyPic" src="http://1.bp.blogspot.com/-ZMF5CK9s5eQ/Ua_DEmM7nsI/AAAAAAAAN_g/8S6OLViSnFg/s1600/Beholder.jpg" alt="">
+                </div>
+                <div class="row">
+                    <p id="enemyHealth"></p>
+                </div>
             </div>
         </div>
     </div>
-<script src="game.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script>$(document).ready(function(){$('[data-toggle="popover"]').popover();});</script>
+    </div>
+    <script src="game.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>$(document).ready(function () { $('[data-toggle="popover"]').popover(); });</script>
 </body>
 
 </html>
